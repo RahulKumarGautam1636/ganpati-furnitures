@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,400i,500|Nunito:300,300i,400" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/fancyboxNew.css">
+        <link rel="shortcut icon" type="image/png" href="img/favicon.png">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <title>Gautam Furnitures</title>
+    </head>
+    <body class="container">
+        <div class="sidebar">
+            <button class="nav-btn"></button>
+        </div>
+
+        <header class="header" id="target">
+            <img src="img/logo.png" alt="Nexter logo" class="header__logo">
+            <h3 class="heading-3">Hello dear, we are:</h3>
+            <h1 class="heading-1">The ultimate furniture workshop</h1>
+            <button class="btn header__btn">View our Projects</button>
+            <div class="header__seenon-text">Seen on</div>
+            <div class="header__seenon-logos">
+                <img src="img/logo-bbc.png" alt="Seen on logo 1">
+                <img src="img/logo-forbes.png" alt="Seen on logo 2">
+                <img src="img/logo-techcrunch.png" alt="Seen on logo 3">
+                <img src="img/logo-bi.png" alt="Seen on logo 4">1
+            </div>
+        </header>
+
+        <div class="realtors">
+            <h3 class="heading-3" onclick="initPixi('#target')">Meet Our Team</h3>
+            <div class="realtors__list">
+                <img src="img/realtor-1.jpeg" alt="Realtor 1" class="realtors__img">
+                <div class="realtors__details">
+                    <h4 class="heading-4 heading-4--light">Gautam Sharma</h4>
+                    <p class="realtors__sold">Business owner</p>
+                </div>
+
+                <img src="img/realtor-2.jpeg" alt="Realtor 2" class="realtors__img">
+                <div class="realtors__details">
+                    <h4 class="heading-4 heading-4--light">Chandan Sharma</h4>
+                    <p class="realtors__sold">Sales executive</p>
+                </div>
+
+                <img src="img/realtor-3.jpeg" alt="Realtor 3" class="realtors__img">
+                <div class="realtors__details">
+                    <h4 class="heading-4 heading-4--light">Toby Ramsey</h4>
+                    <p class="realtors__sold">Assistant Sales executive</p>
+                </div>
+            </div>
+        </div>
+
+        <section class="features">
+            <div class="feature">
+                <svg class="feature__icon">
+                    <use xlink:href="img/sprite.svg#icon-global"></use>
+                </svg>
+                <h4 class="heading-4 heading-4--dark">World's best wood-working</h4>
+                <p class="feature__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur distinctio necessitatibus pariatur voluptatibus.</p>
+            </div>
+
+            <div class="feature">
+                <svg class="feature__icon">
+                    <use xlink:href="img/sprite.svg#icon-trophy"></use>
+                </svg>
+                <h4 class="heading-4 heading-4--dark">Made with best materials </h4>
+                <p class="feature__text">Voluptatum mollitia quae. Vero ipsum sapiente molestias accusamus rerum sed a eligendi aut quia.</p>
+            </div>
+
+            <div class="feature">
+                <svg class="feature__icon">
+                    <use xlink:href="img/sprite.svg#icon-map-pin"></use>
+                </svg>
+                <h4 class="heading-4 heading-4--dark">Customers satisfaction is our priority</h4>
+                <p class="feature__text">Tenetur distinctio necessitatibus pariatur voluptatibus quidem consequatur harum.</p>
+            </div>
+
+            <div class="feature">
+                <svg class="feature__icon">
+                    <use xlink:href="img/sprite.svg#icon-key"></use>
+                </svg>
+                <h4 class="heading-4 heading-4--dark">Customise the way you want</h4>
+                <p class="feature__text">Vero ipsum sapiente molestias accusamus rerum. Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+
+            <div class="feature">
+                <svg class="feature__icon">
+                    <use xlink:href="img/sprite.svg#icon-presentation"></use>
+                </svg>
+                <h4 class="heading-4 heading-4--dark">Reasonable pricing structure</h4>
+                <p class="feature__text">Quidem consequatur harum, voluptatum mollitia quae. Tenetur distinctio necessitatibus pariatur voluptatibus.</p>
+            </div>
+
+            <div class="feature">
+                <svg class="feature__icon">
+                    <use xlink:href="img/sprite.svg#icon-lock"></use>
+                </svg>
+                <h4 class="heading-4 heading-4--dark">Secure online payments</h4>
+                <p class="feature__text">Pariatur voluptatibus quidem consequatur harum, voluptatum mollitia quae.</p>
+            </div>
+        </section>
+        <!-- id="test" onclick="initPixi('#test', 'img/story-1.jpeg')" -->
+        <div class="story__pictures">
+            <img src="img/story-1.jpeg" alt="Couple with new house" class="story__img--1">
+            <img src="img/furniture/img14.jpg" alt="New house" class="story__img--2">
+        </div>
+
+        <div class="story__content">
+            <h3 class="heading-3 mb-sm">Happy Customers</h3>
+            <h2 class="heading-2 heading-2--dark mb-md">&ldquo;The best decision you can make&rdquo;</h2>
+            <p class="story__text">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur distinctio necessitatibus pariatur voluptatibus. Quidem consequatur harum volupta!
+            </p>
+            <!-- <button class="btn">Find your own home</button> -->
+            <button class="btn">View customer reviews</button>
+        </div>
+
+        <section class="homes">
+            <div class="home">
+                <img src="img/furniture/img12.jpg" alt="House 5" class="home__img">
+                <svg class="home__like">
+                    <use xlink:href="img/sprite.svg#icon-heart-full"></use>
+                </svg>
+                <h5 class="home__name">Majestic Palace House</h5>
+                <div class="home__location">
+                    <svg>
+                        <use xlink:href="img/sprite.svg#icon-map-pin"></use>
+                    </svg>
+                    <p>Germany</p>
+                </div>
+                <div class="home__rooms">
+                    <svg>
+                        <use xlink:href="img/sprite.svg#icon-profile-male"></use>
+                    </svg>
+                    <p>18 rooms</p>
+                </div>
+                <div class="home__area">
+                    <svg>
+                        <use xlink:href="img/sprite.svg#icon-expand"></use>
+                    </svg>
+                    <p>4230 m<sup>2</sup></p>
+                </div>
+                <div class="home__price">
+                    <svg>
+                        <use xlink:href="img/sprite.svg#icon-key"></use>
+                    </svg>
+                    <p>$9,500,000</p>
+                </div>
+                <button class="btn home__btn">Contact realtor</button>
+            </div>
+            
+            <div class="home">
+                <img src="img/furniture/img2.jpg" alt="House 2" class="home__img">
+                <svg class="home__like">
+                    <use xlink:href="img/sprite.svg#icon-heart-full"></use>
+                </svg>
+                <h5 class="home__name">Modern Glass Villa</h5>
+                <div class="home__location">
+                    <svg>
+                        <use xlink:href="img/sprite.svg#icon-map-pin"></use>
+                    </svg>
+                    <p>Canada</p>
+                </div>
+                <div class="home__rooms">
+                    <svg>
+                        <use xlink:href="img/sprite.svg#icon-profile-male"></use>
+                    </svg>
+                    <p>6 rooms</p>
+                </div>
+                <div class="home__area">
+                    <svg>
+                        <use xlink:href="img/sprite.svg#icon-expand"></use>
+                    </svg>
+                    <p>450 m<sup>2</sup></p>
+                </div>
+                <div class="home__price">
+                    <svg>
+                        <use xlink:href="img/sprite.svg#icon-key"></use>
+                    </svg>
+                    <p>$2,750,000</p>
+                </div>
+                <button class="btn home__btn">Contact realtor</button>
+            </div>
+
+            <div class="home">
+                <img src="img/furniture/img9.jpg" alt="House 3" class="home__img">
+                <svg class="home__like">
+                    <use xlink:href="img/sprite.svg#icon-heart-full"></use>
+                </svg>
+                <h5 class="home__name">Cozy Country House</h5>
+                <div class="home__location">
+                    <svg>
+                        <use xlink:href="img/sprite.svg#icon-map-pin"></use>
+                    </svg>
+                    <p>UK</p>
+                </div>
+                <div class="home__rooms">
+                    <svg>
+                        <use xlink:href="img/sprite.svg#icon-profile-male"></use>
+                    </svg>
+                    <p>4 rooms</p>
+                </div>
+                <div class="home__area">
+                    <svg>
+                        <use xlink:href="img/sprite.svg#icon-expand"></use>
+                    </svg>
+                    <p>250 m<sup>2</sup></p>
+                </div>
+                <div class="home__price">
+                    <svg>
+                        <use xlink:href="img/sprite.svg#icon-key"></use>
+                    </svg>
+                    <p>$850,000</p>
+                </div>
+                <button class="btn home__btn">Contact realtor</button>
+            </div>
+
+            <div class="home">
+                <img src="img/furniture/img18.jpg" alt="House 4" class="home__img">
+                <svg class="home__like">
+                    <use xlink:href="img/sprite.svg#icon-heart-full"></use>
+                </svg>
+                <h5 class="home__name">Large Rustical Villa</h5>
+                <div class="home__location">
+                    <svg>
+                        <use xlink:href="img/sprite.svg#icon-map-pin"></use>
+                    </svg>
+                    <p>Portugal</p>
+                </div>
+                <div class="home__rooms">
+                    <svg>
+                        <use xlink:href="img/sprite.svg#icon-profile-male"></use>
+                    </svg>
+                    <p>6 rooms</p>
+                </div>
+                <div class="home__area">
+                    <svg>
+                        <use xlink:href="img/sprite.svg#icon-expand"></use>
+                    </svg>
+                    <p>480 m<sup>2</sup></p>
+                </div>
+                <div class="home__price">
+                    <svg>
+                        <use xlink:href="img/sprite.svg#icon-key"></use>
+                    </svg>
+                    <p>$1,950,000</p>
+                </div>
+                <button class="btn home__btn">Contact realtor</button>
+            </div>
+
+            <div class="home">
+                <img src="img/furniture/img1.jpg" alt="House 1" class="home__img">
+                <svg class="home__like">
+                    <use xlink:href="img/sprite.svg#icon-heart-full"></use>
+                </svg>
+                <h5 class="home__name">Beautiful Familiy House</h5>
+                <div class="home__location">
+                    <svg>
+                        <use xlink:href="img/sprite.svg#icon-map-pin"></use>
+                    </svg>
+                    <p>USA</p>
+                </div>
+                <div class="home__rooms">
+                    <svg>
+                        <use xlink:href="img/sprite.svg#icon-profile-male"></use>
+                    </svg>
+                    <p>5 rooms</p>
+                </div>
+                <div class="home__area">
+                    <svg>
+                        <use xlink:href="img/sprite.svg#icon-expand"></use>
+                    </svg>
+                    <p>325 m<sup>2</sup></p>
+                </div>
+                <div class="home__price">
+                    <svg>
+                        <use xlink:href="img/sprite.svg#icon-key"></use>
+                    </svg>
+                    <p>$1,200,000</p>
+                </div>
+                <button class="btn home__btn">Contact realtor</button>
+            </div>
+
+            <div class="home">
+                <img src="img/furniture/img20.jpg" alt="House 6" class="home__img">
+                <svg class="home__like">
+                    <use xlink:href="img/sprite.svg#icon-heart-full"></use>
+                </svg>
+                <h5 class="home__name">Modern Familiy Apartment</h5>
+                <div class="home__location">
+                    <svg>
+                        <use xlink:href="img/sprite.svg#icon-map-pin"></use>
+                    </svg>
+                    <p>Italy</p>
+                </div>
+                <div class="home__rooms">
+                    <svg>
+                        <use xlink:href="img/sprite.svg#icon-profile-male"></use>
+                    </svg>
+                    <p>3 rooms</p>
+                </div>
+                <div class="home__area">
+                    <svg>
+                        <use xlink:href="img/sprite.svg#icon-expand"></use>
+                    </svg>
+                    <p>180 m<sup>2</sup></p>
+                </div>
+                <div class="home__price">
+                    <svg>
+                        <use xlink:href="img/sprite.svg#icon-key"></use>
+                    </svg>
+                    <p>$600,000</p>
+                </div>
+                <button class="btn home__btn">Contact realtor</button>
+            </div>
+        </section>
+
+        <section class="reviews">
+            <div class="reviews__heading">
+                <h2 class="heading-2">
+                    <span class="text-red">💕</span> Loved all over the town <br> by a wide range of <span class="text-blue">customers</span>.
+                </h2>
+                <button class="btn">View all reviews</button>
+            </div>
+            <div class="reviews__slider">
+                
+                <div class="review__card">
+                    <div class="review__card__feedback">
+                        <p>Lorem ipsum dolor sitamet consectetur adipisicing elito sed do eiusmod tempore artisio meto.</p>
+                    </div>
+                    <div class="review__card__person">
+                        <img src="img/realtor-1.jpeg" class="realtors__img" alt="user">
+                        <div class="user__info">
+                            <h4 class="heading-4 heading-4--dark">Abhijit Ghosh</h4>
+                            <p class="occupation">Business owner</p>
+                        </div>
+                        <div class="rating">
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="review__card">
+                    <div class="review__card__feedback">
+                        <p>Lorem ipsum dolor sitamet consectetur adipisicing elito sed do eiusmod tempore artisio meto.</p>
+                    </div>
+                    <div class="review__card__person">
+                        <img src="img/realtor-2.jpeg" class="realtors__img" alt="user">
+                        <div class="user__info">
+                            <h4 class="heading-4 heading-4--dark">Shusmita Saha</h4>
+                            <p class="occupation">Housewife</p>
+                        </div>
+                        <div class="rating">
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="review__card">
+                    <div class="review__card__feedback">
+                        <p>Lorem ipsum dolor sitamet consectetur adipisicing elito sed do eiusmod tempore artisio meto.</p>
+                    </div>
+                    <div class="review__card__person">
+                        <img src="img/realtor-3.jpeg" class="realtors__img" alt="user">
+                        <div class="user__info">
+                            <h4 class="heading-4 heading-4--dark">Saikat Bannerjee</h4>
+                            <p class="occupation">Grocery shop owner</p>
+                        </div>
+                        <div class="rating">
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="contactUs">
+            <div class="contact__page">
+                <div class="contact__page__left">
+                    <h2 class="heading-2">Contact Information</h2>
+                    <p>Fill up the form and our Team will get back to you within 24 hours.</p>
+                    <ul class="address_list">
+                        <li>
+                            <i class='bx bxs-phone-call'></i> +91 7003290982
+                        </li>
+                        <li>
+                            <i class='bx bxs-envelope'></i> 1636rahul@gmail.com
+                        </li>
+                        <li>
+                            <i class='bx bxs-map'></i> Nangi station road, Batanagar Kol - 700140
+                        </li>
+                    </ul>
+                    <ul class="icon_links">
+                        <li>
+                            <i class='bx bxl-facebook'></i>
+                        </li>                        
+                        <li>
+                            <i class='bx bxl-instagram'></i>
+                        </li>                        
+                        <li>
+                            <i class='bx bxl-twitter' ></i>
+                        </li>                        
+                        <li>
+                            <i class='bx bxl-linkedin'></i>
+                        </li>
+                    </ul>
+                </div>
+                <div class="contact__page__right">
+                    <div class="contact__form">
+                        <div class="input__fields">
+                            <div class="input__group">
+                                <label for="fName">First Name</label>
+                                <input type="text" placeholder="Rahul Kumar" id="fName"/>
+                            </div>
+                            <div class="input__group">
+                                <label for="lName">Last Name</label>
+                                <input type="text" placeholder="Gautam" id="lName"/>
+                            </div>
+                            <div class="input__group">
+                                <label for="email">Your e-mail</label>
+                                <input type="email" placeholder="example@gmail.com" id="email"/>
+                            </div>
+                            <div class="input__group">
+                                <label for="phone">Phone number</label>
+                                <input type="text" placeholder="xxxxxxxxxx" id="phone"/>
+                            </div>
+                        </div>
+                        <div class="extra__fields">
+                            <h4 class="heading-4 heading-4--dark">Please enter your message and full Address.</h4>
+                            <div class="input__group">
+                                <label for="address">Your address</label>
+                                <input type="text" placeholder="Address" id="address"/>
+                            </div>
+                        </div>
+                        <div class="text__area">
+                            <div class="input__group">
+                                <label for="message">Your Message</label>
+                                <textarea name="message" id="message" rows="1" placeholder="Write your message here"></textarea>
+                            </div>
+                        </div>
+
+                        <button onclick="sendMessage()" class="btn">Send Message</button> 
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="gallery">
+            <figure class="gallery__item gallery__item--1"><a href="img/furniture/img7.jpg" class="gallery-grid" data-fancybox><img src="img/furniture/img7.jpg" alt="Gallery image 1" class="gallery__img"></a></figure>
+            <figure class="gallery__item gallery__item--2"><a href="img/furniture/img21.jpg" class="gallery-grid" data-fancybox><img src="img/furniture/img21.jpg" alt="Gallery image 2" class="gallery__img"></a></figure>
+            <figure class="gallery__item gallery__item--3"><a href="img/furniture/img4.jpg" class="gallery-grid" data-fancybox><img src="img/furniture/img4.jpg" alt="Gallery image 3" class="gallery__img"></a></figure>
+            <figure class="gallery__item gallery__item--4"><a href="img/furniture/img16.jpg" class="gallery-grid" data-fancybox><img src="img/furniture/img16.jpg" alt="Gallery image 4" class="gallery__img"></a></figure>
+            <figure class="gallery__item gallery__item--5"><a href="img/furniture/img18.jpg" class="gallery-grid" data-fancybox><img src="img/furniture/img18.jpg" alt="Gallery image 5" class="gallery__img"></a></figure>
+            <figure class="gallery__item gallery__item--6"><a href="img/furniture/img1.jpg" class="gallery-grid" data-fancybox><img src="img/furniture/img1.jpg" alt="Gallery image 6" class="gallery__img"></a></figure>
+            <figure class="gallery__item gallery__item--7"><a href="img/furniture/img5.jpg" class="gallery-grid" data-fancybox><img src="img/furniture/img5.jpg" alt="Gallery image 7" class="gallery__img"></a></figure>
+            <figure class="gallery__item gallery__item--8"><a href="img/furniture/img10.jpg" class="gallery-grid" data-fancybox><img src="img/furniture/img10.jpg" alt="Gallery image 8" class="gallery__img"></a></figure>
+            <figure class="gallery__item gallery__item--9"><a href="img/furniture/img11.jpg" class="gallery-grid" data-fancybox><img src="img/furniture/img11.jpg" alt="Gallery image 9" class="gallery__img"></a></figure>
+            <figure class="gallery__item gallery__item--10"><a href="img/furniture/img19.jpg" class="gallery-grid" data-fancybox><img src="img/furniture/img19.jpg" alt="Gallery image 10" class="gallery__img"></a></figure>
+            <figure class="gallery__item gallery__item--11"><a href="img/furniture/img14.jpg" class="gallery-grid" data-fancybox><img src="img/furniture/img14.jpg" alt="Gallery image 11" class="gallery__img"></a></figure>
+            <figure class="gallery__item gallery__item--12"><a href="img/furniture/img15.jpg" class="gallery-grid" data-fancybox><img src="img/furniture/img15.jpg" alt="Gallery image 12" class="gallery__img"></a></figure>
+            <figure class="gallery__item gallery__item--13"><a href="img/furniture/img8.jpg" class="gallery-grid" data-fancybox><img src="img/furniture/img8.jpg" alt="Gallery image 13" class="gallery__img"></a></figure>
+            <figure class="gallery__item gallery__item--14"><a href="img/furniture/img17.jpg" class="gallery-grid" data-fancybox><img src="img/furniture/img17.jpg" alt="Gallery image 14" class="gallery__img"></a></figure>
+        </section>
+
+        
+
+        <footer class="footer">
+            <ul class="nav">
+                    <li class="nav__item"><a href="#" class="nav__link">Find your dream home</a></li>
+                    <li class="nav__item"><a href="#" class="nav__link">Request proposal</a></li>
+                    <li class="nav__item"><a href="#" class="nav__link">Download home planner</a></li>
+                    <li class="nav__item"><a href="#" class="nav__link">Contact us</a></li>
+                    <li class="nav__item"><a href="#" class="nav__link">Submit your property</a></li>
+                    <li class="nav__item"><a href="#" class="nav__link">Come work with us!</a></li>
+            </ul>
+            <p class="copyright">
+                &copy; Copyright 2017 by Jonas Schmedtmann. Feel free to use this project for your own purposes. This does NOT apply if you plan to produce your own course or tutorials based on this project.
+            </p>
+        </footer>
+        <script src="js/jquery.min.js"></script>
+        <script src="js/fancybox.umd.js"></script>1
+        <script src="js/pixi.min.501.js"></script>
+        <script>
+            function sendMessage() {
+                let fName = document.querySelector('#fName').value;
+                let lName = document.querySelector('#lName').value;
+                let name = fName + ' ' + lName;
+                let phone = document.querySelector('#phone').value;
+                let address = document.querySelector('#address').value;
+                let message = document.querySelector('#message').value;
+                let content = `https://api.whatsapp.com/send/?phone=9163226355&text=Name: ${name}, Phone: ${phone}, Address: ${address}, message: ${message}.`;
+                window.location.href = content;
+            }
+
+            var app;
+            function initPixi(targetEl, bgImg) {
+                let target = document.querySelector(targetEl);
+                app = new PIXI.Application({width: target.offsetWidth, height: target.offsetHeight});
+                target.appendChild(app.view);
+
+                
+                if (bgImg === undefined) {
+                    maskImg = target.offsetWidth > 800 ? 'img/furniture/hero.jpg' : 'img/furniture/img7.jpg'; 
+                } else {
+                    maskImg = bgImg;
+                }
+                var image = new PIXI.Sprite.from(maskImg);
+                image.width = target.offsetWidth;
+                image.height = target.offsetHeight;
+                app.stage.addChild(image);
+
+                displacementSprite = new PIXI.Sprite.from("img/displacement.jpg");
+                displacementFilter = new PIXI.filters.DisplacementFilter(displacementSprite);
+                displacementSprite.texture.baseTexture.wrapMode = PIXI.WRAP_MODES.REPEAT;
+                app.stage.addChild(displacementSprite);
+                app.stage.filters = [displacementFilter];
+
+                app.renderer.view.style.transform = 'scale(1.05)';
+                displacementSprite.scale.x = 1.5;
+                displacementSprite.scale.y = 1.5;
+                animate();
+            }
+            function animate() {
+                displacementSprite.x += 0.7;
+                displacementSprite.y += 0.7;
+                requestAnimationFrame(animate);
+            }
+            
+        </script>
+    </body>
+</html>

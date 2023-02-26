@@ -1,0 +1,165 @@
+.contactUs {
+    grid-column: full-start / full-end;
+    padding: 10rem 7rem 10rem;
+    font-size: 1.6rem;
+
+    @media only screen and (max-width: $bp-medium) {
+        padding: 1.5rem;
+    }
+
+    & .contact__page {
+        display: flex;
+        padding: 1rem;
+        background: #f0f0f0;
+        border-radius: 10px;
+
+        @media only screen and (max-width: $bp-medium) {
+            flex-direction: column;
+        }
+        
+        &__left {
+            background: linear-gradient(45deg, rgba(86, 58, 250, 0.9) 0%, rgba(116, 15, 214, 0.9) 100%), url(../img/hero-bg.jpg) center center no-repeat;
+            width: 40%;
+            padding: 5rem 4rem;
+            border-radius: 10px;
+            color: white;
+            position: relative;
+            overflow: hidden;
+            z-index: 0;
+
+            @media only screen and (max-width: $bp-medium) {
+                width: 100%;
+            }
+            
+            & h2 {
+                font-style: normal;
+                font-size: 4.5rem;
+                font-family: 'Nunito', 'Josefin Sans';
+            }
+
+            & p {
+                font-size: 1.9rem;
+                line-height: 1.8;
+                color: #ffffffa6;
+                margin: 1.5rem 0 4rem;
+                font-family: "Josefin sans";
+            }
+
+            & .address_list {
+                font-size: 1.75rem;
+                line-height: 3;
+                list-style: none;
+
+                & i {
+                    font-size: 2rem;
+                    margin-right: 0.6rem;
+                    color: #ff9900;
+                }
+            }
+
+            & .icon_links {
+                font-size: 2.5rem;
+                display: flex;
+                gap: 3rem;
+                list-style: none;
+                margin-top: 12rem;
+
+            }
+
+            &::before,
+            &::after {
+                content: '';
+                position: absolute;
+                bottom: -33%;
+                right: -38%;
+                height: 42rem;
+                width: 42rem;
+                background: #ff8d9d;
+                border-radius: 50%;
+                box-shadow: inset 0px 0px 42px 0px rgba(0, 0, 0, .4);
+                z-index: -1;
+                animation: up-down 1.5s ease-in-out infinite alternate-reverse both;
+                animation-delay: 1s;
+            }
+            
+            &::after {
+                background: #58ebfa;
+                height: 13rem;
+                width: 13rem;
+                bottom: 15%;
+                left: 56%;
+                animation: up-down 1.5s ease-in-out infinite alternate-reverse both;
+            }
+
+        }
+
+        &__right {
+            padding: 3rem;
+            width: 60%;
+
+            @media only screen and (max-width: $bp-medium) {
+                width: 100%;
+                padding: 3rem 1rem;
+            }
+
+            & .input__fields {
+                display: flex;
+                flex-wrap: wrap;
+                row-gap: 1.5rem;
+
+                & .input__group {
+                    width: 50%;
+                    padding: 1rem;
+
+                    @media only screen and (max-width: $bp-medium) {
+                        padding: 1rem 1rem 0 0;
+                    }
+
+                    & input {
+                        width: 100%;
+                    }
+                }
+            }
+
+            & .extra__fields {
+                
+                & h4 {
+                    margin: 3.5rem 0 1.5rem;
+                    font-family: 'Nunito';
+                    font-weight: 600;
+                }
+
+
+            }
+
+            & .text__area {
+                margin: 3rem 0 3.5rem;
+            }
+
+            & .input__group input[type="text"],
+            & .input__group input[type="email"],
+            & #message {
+                width: 100%;
+                padding: 1.8rem 1rem 1.2rem;
+                border: none;
+                border-bottom: 4px solid #e3e3e3;
+                background: #f0f0f0;
+                outline: none;
+                font-family: 'Nunito';
+                font-family: "Josefin Sans";
+                font-size: 1.6rem;
+
+                @media only screen and (max-width: $bp-medium) {
+                    border-bottom: 2px solid #e3e3e3;
+                }
+            }
+
+            button {
+                display: block;
+                margin-left: auto;
+            }
+
+        }
+
+    }
+}
